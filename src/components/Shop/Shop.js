@@ -37,6 +37,7 @@ const Shop = () => {
 
     const handleAddToCart = (product) => {
         const newCart = [...cart, product];
+        console.log("now cart is : ",newCart);
         setCart(newCart);
         // save to local storage (for now)
         addToDb(product.key);
